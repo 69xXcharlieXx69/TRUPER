@@ -6,23 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#d71920">
   <title>TRUPER - Métricas Q4</title>
-  <link rel="manifest" href="./manifest.json">
+  <link rel="manifest" href="/TRUPER/manifest.json">
+  <link rel="icon" href="/TRUPER/truper-icon.png">
+  <link rel="apple-touch-icon" href="/TRUPER/truper-icon.png">
 </head>
 <body>
   <h2>TRUPER - Métricas Q4</h2>
-  <p>Abre la aplicación con el siguiente botón:</p>
+  <p>Registro y seguimiento de metas de aspiradoras y desbrozadoras.</p>
   <a href="https://script.google.com/macros/s/AKfycbzg7WTydPF8c_wQKDLw45czwYLGODE2tEq3fDa71Y_9_pF5OZ4bhf_4lRUUiE2BBZ56/exec"
      target="_blank" rel="noopener">
     Abrir Métricas Q4
   </a>
-
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js")
-        .catch((error) => console.error("Error SW:", error));
-    });
-  }
-</script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/TRUPER/sw.js");
+    }
+  </script>
 </body>
 </html>
