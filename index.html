@@ -15,5 +15,14 @@
      target="_blank" rel="noopener">
     Abrir Métricas Q4
   </a>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js")
+        .catch((error) => console.error("Error SW:", error));
+    });
+  }
+</script>
 </body>
 </html>
